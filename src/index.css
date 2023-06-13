@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  @apply bg-gray-100;
+}
+
+.container {
+  @apply mx-auto px-4;
+  max-width: 1300px;
+}
+
+.btn {
+  @apply px-10 py-2 rounded-md text-white;
+
+  background: linear-gradient(
+    210deg,
+    #00eaff 0%,
+    #0080ff 25%,
+    #8000ff 50%,
+    #e619e6 75%,
+    #f00 100%
+  );
+}
+
+.nav-item {
+  @apply cursor-pointer hover:text-primary;
+}
+.nav-item-active {
+  @apply text-primary;
+}
+
+.overlay {
+  @apply w-full h-full absolute bg-black opacity-60 -z-[9px];
+}
+
+.homecard {
+  background-image: linear-gradient(
+    108.18deg,
+    rgba(234, 76, 137, 0.2) -2.02%,
+    rgba(77, 68, 198, 0.2) 100%
+  );
+}
