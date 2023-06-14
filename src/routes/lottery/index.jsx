@@ -123,7 +123,7 @@ const Lottery = () => {
                             <table className="min-w-[500px]">
                                 <thead>
                                     <tr className="text-left">
-                                        <th className="px-5 py-3 text-secondary font-medium">Players</th>
+                                        <th className="px-5 py-3 text-secondary font-medium">Players </th>
                                         <th className="px-5 py-3 text-secondary text-center font-medium">Purchase</th>
                                         <th className="px-5 py-3 text-secondary text-center font-medium">Weight</th>
                                         <th className="px-5 py-3 text-secondary text-center font-medium">Tx</th>
