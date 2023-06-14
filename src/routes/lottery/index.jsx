@@ -72,18 +72,18 @@ const Lottery = () => {
                 <video className='w-full h-full object-cover absolute -z-10' autoPlay loop muted>
                     <source src={LotteryVid} type='video/mp4' />
                 </video>
-                <div className="container z-10 text-center w-[700px] mb-10">
-                    <div className="text-6xl text-center  m-auto ">$3410650.401</div>
+                <div className="container z-10 text-center lg:w-[700px] mb-10">
+                    <div className="text-5xl lg:text-6xl text-center  m-auto ">$3410650.401</div>
                     <div className='text-white text-xl mt-2'>Total Rewards Distributed</div>
-                    <p className='my-7'>When you buy $100–$1000 worth of Aidrip through Camelot, youll get a ticket that is weighted in accordance with your purchase. Distribution of ARB airdrops will occur every 30 minutes. The algorithm is open source. Good luck!</p>
-                    <button className='btn'>View Rules</button>
+                    {/* <p className='my-7'>When you buy $100–$1000 worth of Aidrip through Camelot, youll get a ticket that is weighted in accordance with your purchase. Distribution of ARB airdrops will occur every 30 minutes. The algorithm is open source. Good luck!</p> */}
+                    <button className='btn mt-7'>Buy AiDRIP</button>
 
                 </div>
             </div>
 
-            <div className="my-28 container space-y-5">
+            <div className="my-14 lg:my-28 container space-y-5">
                 <TableLayout title="Statics" >
-                    <div className="grid grid-cols-4 py-10 gap-4 font-bold">
+                    <div className="grid grid-cols-2 lg:grid-cols-4 py-10 gap-4 font-bold">
                         <div className='px-5 text-center'>
                             <div className="text-base text-secondary font-medium">Total Distribution</div>
                             <div className="text-lg">2740261.794</div>
@@ -102,12 +102,12 @@ const Lottery = () => {
                         </div>
                     </div>
                 </TableLayout>
-                <div className="grid grid-cols-2 gap-5">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                     <TableLayout title="My Wallet" >
                         <div className="py-10 text-center">
                             <img src="/assets/images/logo.png" alt="icon" className="w-28 inline-block" />
                             <div className="mt-1">0.000Aidrip</div>
-                            <button className='btn mt-5 w-[400px]'>Buy Aidrip</button>
+                            <button className='btn mt-5 lg:w-[400px]'>Buy Aidrip</button>
                         </div>
                     </TableLayout>
 
@@ -115,12 +115,12 @@ const Lottery = () => {
                         <div className="py-10 text-center">
                             <img src="/assets/images/nft.svg" alt="icon" className="w-10 h-10 inline-block" />
                             <div className="mt-1">0.000 ARB</div>
-                            <button className='btn mt-5 w-[400px]'>View</button>
+                            <button className='btn mt-5 lg:w-[400px]'>View</button>
                         </div>
                     </TableLayout>
                     <TableLayout title="Recent Players" >
-                        <div className="py-7">
-                            <table className="w-full">
+                        <div className="py-7 overflow-auto">
+                            <table className="min-w-[500px]">
                                 <thead>
                                     <tr className="text-left">
                                         <th className="px-5 py-3 text-secondary font-medium">Players</th>
@@ -177,8 +177,8 @@ const Lottery = () => {
 
                     </TableLayout>
                     <TableLayout title="Recent Winners" >
-                        <div className="py-7">
-                            <table className="w-full">
+                        <div className="py-7 overflow-auto">
+                            <table className="min-w-[500px]">
                                 <thead>
                                     <tr className="text-left">
                                         <th className="px-5 py-3 text-secondary font-medium">Players</th>

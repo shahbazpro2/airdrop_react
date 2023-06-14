@@ -14,12 +14,12 @@ const Card = ({ data, selectedAll, setSelectedAll }) => {
 
     return (
         <div className={twMerge(`grid grid-cols-12 p-3 gap-5 rounded-lg hover:shadow-lg border bg-white cursor-pointer`, `${isSelected ? 'bg-light border border-primary shadow-lg' : ''}`)} onClick={onSelectUnSelect}>
-            <div className='col-span-5'>
+            <div className='md:col-span-5 col-span-12'>
                 <video className='w-full h-full object-cover' autoPlay loop muted>
                     <source src={data?.video} type='video/mp4' />
                 </video>
             </div>
-            <div className='col-span-7'>
+            <div className='md:col-span-7 col-span-12'>
                 <div className="text-xl">#{data?.id}</div>
                 <div className="grid grid-cols-2 gap-0 items-center justify-center  text-sm">
                     <div className='  font-bold '>Account:</div>

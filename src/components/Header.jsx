@@ -93,7 +93,7 @@ const Header = () => {
                                         ))}
                                         <div className="inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                                             <div>
-                                                <button className="btn">Connect Wallet</button>
+                                                <button className="btn" onClick={openWeb3}>Connect Wallet</button>
                                             </div>
 
                                         </div>
