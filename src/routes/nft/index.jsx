@@ -70,10 +70,10 @@ const Nft = () => {
                     <source src={nftVid} type='video/mp4' />
                 </video>
                 <div className="container z-10 text-center mb-10">
-                    <div className="text-6xl text-center lg:w-[700px] m-auto">
+                    <div className="text-6xl text-center lg:w-[700px] m-auto mb-10">
                         NFT Airdrop
                     </div>
-
+                    <a href="#nft" className='btn'>Stake</a>
                 </div>
             </div>
             <div className="container">
@@ -94,7 +94,7 @@ const Nft = () => {
 
                 </div>
             </div>
-            <div className="my-28 container">
+            <div className="my-28 container" id="nft">
                 <div className="text-4xl mb-10">MY NFTs ({cardData?.length})</div>
                 <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
                     {

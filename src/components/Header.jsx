@@ -44,8 +44,8 @@ const Header = () => {
                                                 )}
                                             </Disclosure.Button>
                                         </div>
-                                        <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between py-5">
-                                            <div className='w-[180px] flex sm:block justify-center lg:justify-start relative'>
+                                        <div className="flex flex-1 items-center sm:items-stretch justify-between py-5">
+                                            <div className='w-[200px] flex sm:block justify-center lg:justify-start relative ml-12 sm:ml-0'>
                                                 <img src={Logo} alt="logo" className='w-full' />
                                                 <div className="text-xs -mt-3 bottom-0 left-16 absolute">Powered by AIDRIP</div>
                                             </div>
@@ -66,7 +66,7 @@ const Header = () => {
                                                     ))}
                                                 </div>
                                             </div>
-                                            <div className="absolute inset-y-0 right-0 items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 sm:flex hidden">
+                                            <div className=" items-center  pr-2 sm:ml-6 sm:pr-0 flex">
                                                 <div>
                                                     <button className="btn" onClick={openWeb3}>Connect Wallet</button>
                                                 </div>

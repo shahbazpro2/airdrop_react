@@ -77,7 +77,7 @@ const Airdrop = () => {
                     <source src={airdrop} type='video/mp4' />
                 </video>
                 <div className="container z-[5] text-center">
-                    <div className="lg:text-6xl text-5xl text-center lg:w-[700px] m-auto mb-10">Burn your NFT's to claim your AIRDIP</div>
+                    <div className="lg:text-6xl text-5xl text-center lg:w-[700px] m-auto mb-10">Burn your NFT's to claim your AiDRIP</div>
                     {/* <div className="my-10 flex gap-5 items-center justify-center">
                         <div className='text-primary text-3xl '>Referral reward:</div>
                         <div className='text-xl'> XXXX AID RIP</div>

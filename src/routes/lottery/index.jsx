@@ -1,5 +1,7 @@
 import TableLayout from '../../components/TableLayout'
 import LotteryVid from '../../assets/videos/lottery.mp4'
+import Logo from '../../assets/images/logo.png'
+import nft from '../../assets/images/nft.svg'
 
 const players = [
     {
@@ -66,18 +68,17 @@ const Lottery = () => {
 
     return (
         <div>
-            <div className='min-h-[85vh] flex justify-center items-end airdrop-top relative text-white'>
+            <div className='min-h-[100vh] flex justify-center items-end airdrop-top relative text-white'>
                 <div className="overlay">
                 </div>
                 <video className='w-full h-full object-cover absolute -z-10' autoPlay loop muted>
                     <source src={LotteryVid} type='video/mp4' />
                 </video>
-                <div className="container z-10 text-center lg:w-[700px] mb-10">
-                    <div className="text-5xl lg:text-6xl text-center  m-auto ">$3410650.401</div>
-                    <div className='text-white text-xl mt-2'>Total Rewards Distributed</div>
+                <div className="container z-10 text-center lg:w-[700px] mb-5">
+                    <div className="text-5xl lg:text-6xl  m-auto">$3410650.401</div>
+                    <div className='text-white text-xl mt-2 mb-7'>Total Rewards Distributed</div>
                     {/* <p className='my-7'>When you buy $100–$1000 worth of Aidrip through Camelot, youll get a ticket that is weighted in accordance with your purchase. Distribution of ARB airdrops will occur every 30 minutes. The algorithm is open source. Good luck!</p> */}
-                    <button className='btn mt-7'>Buy AiDRIP</button>
-
+                    <a href="#stake" className='btn cursor-pointer'>Buy AiDRIP</a>
                 </div>
             </div>
 
@@ -102,19 +103,23 @@ const Lottery = () => {
                         </div>
                     </div>
                 </TableLayout>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-5" id="stake">
                     <TableLayout title="My Wallet" >
                         <div className="py-10 text-center">
-                            <img src="/assets/images/logo.png" alt="icon" className="w-28 inline-block" />
-                            <div className="mt-1">0.000Aidrip</div>
+                            <div className="h-[70px]">
+                                <img src={Logo} alt="icon" className="w-28 inline-block" />
+                                <div className="mt-1">0.000Aidrip</div>
+                            </div>
                             <button className='btn mt-5 lg:w-[400px]'>Buy Aidrip</button>
                         </div>
                     </TableLayout>
 
                     <TableLayout title="My Rewards" >
                         <div className="py-10 text-center">
-                            <img src="/assets/images/nft.svg" alt="icon" className="w-10 h-10 inline-block" />
-                            <div className="mt-1">0.000 ARB</div>
+                            <div className="h-[70px]">
+                                <img src={nft} alt="icon" className="w-10 h-10 inline-block" />
+                                <div className="mt-1">0.000 ARB</div>
+                            </div>
                             <button className='btn mt-5 lg:w-[400px]'>View</button>
                         </div>
                     </TableLayout>
