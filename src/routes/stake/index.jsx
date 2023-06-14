@@ -18,8 +18,8 @@ const Stake = () => {
                             $0.00
                         </div>
                     </div> */}
-                    <a href="#stake" className="btn">Stake</a>
                 </div>
+                <a href="#stake" className="btn absolute bottom-10">Stake</a>
             </div>
             <div className="container z-10 mb-32 mt-14 lg:mt-28">
                 <div className="grid grid-cols-2 gap-7">

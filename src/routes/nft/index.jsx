@@ -63,7 +63,7 @@ const Nft = () => {
 
     return (
         <div>
-            <div className='min-h-[85vh] flex justify-center items-end  airdrop-top relative text-white'>
+            <div className='min-h-[85vh] flex justify-center items-center  airdrop-top relative text-white'>
                 <div className="overlay">
                 </div>
                 <video className='w-full h-full object-cover absolute -z-10' autoPlay loop muted>
@@ -73,8 +73,8 @@ const Nft = () => {
                     <div className="text-6xl text-center lg:w-[700px] m-auto mb-10">
                         NFT Airdrop
                     </div>
-                    <a href="#nft" className='btn'>Stake</a>
                 </div>
+                <a href="#nft" className='btn absolute bottom-10'>Stake</a>
             </div>
             <div className="container">
                 <div className="my-20  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7">
