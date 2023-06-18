@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  @apply bg-gray-100;
+  @apply bg-dark text-white;
 }
 
 .container {
@@ -21,12 +21,9 @@ body {
   @apply px-3 text-sm md:text-base md:px-10 py-2 rounded-md text-white;
 
   background: linear-gradient(
-    210deg,
-    #00eaff 0%,
-    #0080ff 25%,
-    #8000ff 50%,
-    #e619e6 75%,
-    #f00 100%
+    60deg,
+    rgba(255, 28, 90, 1) 48%,
+    rgba(184, 56, 238, 1) 74%
   );
 }
 
@@ -46,5 +43,16 @@ body {
     108.18deg,
     rgba(234, 76, 137, 0.2) -2.02%,
     rgba(77, 68, 198, 0.2) 100%
+  );
+}
+
+.card {
+  @apply relative h-1 rounded-lg rounded-tl-none rounded-tr-none;
+  background: linear-gradient(
+    90deg,
+    rgba(180, 58, 98, 1) 0%,
+    rgba(154, 49, 193, 1) 23%,
+    rgba(29, 153, 253, 1) 48%,
+    rgba(235, 69, 252, 1) 100%
   );
 }

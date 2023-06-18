@@ -23,18 +23,19 @@ const Stake = () => {
             </div>
             <div className="container z-10 mb-32 mt-14 lg:mt-28">
                 <div className="grid grid-cols-2 gap-7">
-                    <div className="col-span-2 flex justify-center">
-                        <div className=" bg-black/90 border border-primary text-white rounded-md p-5 text-2xl text-center space-y-3 w-[100%]">
+                    <div className="col-span-2">
+                        <div className=" bg-secondary text-white rounded-md p-5 text-2xl text-center space-y-3 w-[100%]">
                             <div className='text-primary font-bold text-2xl'>
                                 TVL
                             </div>
                             <div className='text-white font-bold text-4xl'>
                                 $235,000
                             </div>
+
                         </div>
                     </div>
                     <div className="col-span-2 lg:col-span-1" id="stake">
-                        <div className=" bg-black/90 border-[1px] border-primary text-white rounded-md px-7 lg:px-14 py-10  text-2xl text-center">
+                        <div className=" bg-secondary text-white rounded-md px-7 lg:px-14 py-10  text-2xl text-center">
                             <div className=''>
                                 Single Staking
                             </div>
@@ -77,10 +78,11 @@ const Stake = () => {
                                 <button className="btn text-sm">Approve</button>
                             </div>
                         </div>
+                        <div className="card"></div>
                     </div>
 
                     <div className="col-span-2 lg:col-span-1">
-                        <div className=" bg-black/90 border-[1px] border-primary text-white rounded-md px-7 lg:px-14 py-10  text-2xl text-center">
+                        <div className=" bg-secondary   text-white rounded-md px-7 lg:px-14 py-10  text-2xl text-center">
                             <div className=''>
                                 LP Staking
                             </div>
@@ -123,6 +125,7 @@ const Stake = () => {
                                 <button className="btn text-sm">Approve</button>
                             </div>
                         </div>
+                        <div className="card"></div>
                     </div>
                 </div>
 

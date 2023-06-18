@@ -69,7 +69,7 @@ const Nft = () => {
                 <video className='w-full h-full object-cover absolute -z-10' autoPlay loop muted>
                     <source src={nftVid} type='video/mp4' />
                 </video>
-                <div className="container z-10 text-center mb-10">
+                <div className="container z-[5] text-center mb-10">
                     <div className="text-6xl text-center lg:w-[700px] m-auto mb-10">
                         NFT Airdrop
                     </div>
@@ -78,18 +78,30 @@ const Nft = () => {
             </div>
             <div className="container">
                 <div className="my-20  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7">
-                    <div className='rounded-lg border border-primary bg-white flex justify-center items-center min-h-[200px] text-xl'>
-                        NFT Supply
+                    <div>
+                        <div className='rounded-lg  bg-secondary flex justify-center items-center min-h-[200px] text-xl'>
+                            NFT Supply
+                        </div>
+                        <div className="card"></div>
                     </div>
-                    <div className='rounded-lg border border-primary bg-white flex justify-center items-center min-h-[200px] text-xl'>
-                        Average Daily Rewards
+                    <div>
+                        <div className='rounded-lg  bg-secondary flex justify-center items-center min-h-[200px] text-xl'>
+                            Average Daily Rewards
+                        </div>
+                        <div className="card"></div>
                     </div>
-                    <div className='rounded-lg border border-primary bg-white flex justify-center items-center min-h-[200px] text-xl'>
-                        Your Share
+                    <div>
+                        <div className='rounded-lg  bg-secondary flex justify-center items-center min-h-[200px] text-xl'>
+                            Your Share
+                        </div>
+                        <div className="card"></div>
                     </div>
-                    <div className='rounded-lg border border-primary bg-white flex flex-col space-y-4 justify-center items-center min-h-[200px] text-xl'>
-                        <div> Your Rewards</div>
-                        <button className='btn'>Claim</button>
+                    <div>
+                        <div className='rounded-lg  bg-secondary flex flex-col space-y-4 justify-center items-center min-h-[200px] text-xl'>
+                            <div> Your Rewards</div>
+                            <button className='btn'>Claim</button>
+                        </div>
+                        <div className="card"></div>
                     </div>
 
                 </div>

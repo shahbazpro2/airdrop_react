@@ -76,14 +76,14 @@ const Header = () => {
                                     </div>
                                 </div>
 
-                                <Disclosure.Panel className="sm:hidden bg-white rounded-lg relative ">
+                                <Disclosure.Panel className="sm:hidden bg-dark rounded-lg relative ">
                                     <div className="space-y-1 px-2 pb-3 pt-2 z-20 relative">
                                         {links.map((item) => (
                                             <Disclosure.Button
                                                 key={item.name}
                                                 onClick={() => navigate(item.path)}
                                                 className={classNames(
-                                                    item.current ? ' text-primary' : 'text-black hover:text-primary',
+                                                    item.current ? ' text-primary' : 'text-white hover:text-primary',
                                                     'block rounded-md px-3 py-2 text-base font-medium cursor-pointer'
                                                 )}
                                                 aria-current={item.current ? 'page' : undefined}

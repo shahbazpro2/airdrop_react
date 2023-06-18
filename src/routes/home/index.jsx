@@ -64,23 +64,53 @@ const Home = () => {
             </div>
             <div className="container">
                 <div className="my-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-7">
-                    <div className='rounded-lg border border-primary bg-white flex justify-center items-center min-h-[100px] text-xl'>
-                        Current Price
+                    <div>
+                        <div className='rounded-lg shadow-xl text-white bg-secondary flex justify-center items-center min-h-[100px] text-xl'>
+                            Current Price
+                        </div>
+                        <div className="card">
+                        </div>
+
                     </div>
-                    <div className='rounded-lg border border-primary bg-white flex justify-center items-center min-h-[100px] text-xl'>
-                        Total Supply
+                    <div>
+                        <div className='rounded-lg shadow-xl  text-white bg-secondary flex justify-center items-center min-h-[100px] text-xl'>
+                            Total Supply
+                        </div>
+                        <div className="card">
+                        </div>
+
                     </div>
-                    <div className='rounded-lg border border-primary bg-white flex justify-center items-center min-h-[100px] text-xl'>
-                        Burned Supply
+                    <div>
+                        <div className='rounded-lg shadow-xl  text-white bg-secondary flex justify-center items-center min-h-[100px] text-xl'>
+                            Burned Supply
+                        </div>
+                        <div className="card">
+                        </div>
+
                     </div>
-                    <div className='rounded-lg border border-primary bg-white flex justify-center items-center min-h-[100px] text-xl'>
-                        Market Cap
+                    <div>
+                        <div className='rounded-lg shadow-xl  text-white bg-secondary flex justify-center items-center min-h-[100px] text-xl'>
+                            Market Cap
+                        </div>
+                        <div className="card">
+                        </div>
+
                     </div>
-                    <div className='rounded-lg border border-primary bg-white flex justify-center items-center min-h-[100px] text-xl'>
-                        Total Rewarded
+                    <div>
+                        <div className='rounded-lg shadow-xl  text-white bg-secondary flex justify-center items-center min-h-[100px] text-xl'>
+                            Total Rewarded
+                        </div>
+                        <div className="card">
+                        </div>
+
                     </div>
-                    <div className='rounded-lg border border-primary bg-white flex justify-center items-center min-h-[100px] text-xl'>
-                        Sent to Vault
+                    <div>
+                        <div className='rounded-lg shadow-xl  text-white bg-secondary flex justify-center items-center min-h-[100px] text-xl'>
+                            Sent to Vault
+                        </div>
+                        <div className="card">
+                        </div>
+
                     </div>
                 </div>
             </div>
