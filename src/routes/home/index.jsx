@@ -39,6 +39,21 @@ const cardData = [
     }
 ]
 
+const SmallCard = ({ title, price }) => <div>
+    <div className='rounded-lg shadow-xl text-white bg-secondary flex flex-col justify-center items-center min-h-[100px] text-xl'>
+        <div>
+            {title}
+        </div>
+        <div className='text-white font-bold text-2xl'>
+            ${price}
+        </div>
+    </div>
+
+    <div className="card">
+    </div>
+
+</div>
+
 const Home = () => {
     return (
         <div>
@@ -64,54 +79,12 @@ const Home = () => {
             </div>
             <div className="container">
                 <div className="my-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-7">
-                    <div>
-                        <div className='rounded-lg shadow-xl text-white bg-secondary flex justify-center items-center min-h-[100px] text-xl'>
-                            Current Price
-                        </div>
-                        <div className="card">
-                        </div>
-
-                    </div>
-                    <div>
-                        <div className='rounded-lg shadow-xl  text-white bg-secondary flex justify-center items-center min-h-[100px] text-xl'>
-                            Total Supply
-                        </div>
-                        <div className="card">
-                        </div>
-
-                    </div>
-                    <div>
-                        <div className='rounded-lg shadow-xl  text-white bg-secondary flex justify-center items-center min-h-[100px] text-xl'>
-                            Burned Supply
-                        </div>
-                        <div className="card">
-                        </div>
-
-                    </div>
-                    <div>
-                        <div className='rounded-lg shadow-xl  text-white bg-secondary flex justify-center items-center min-h-[100px] text-xl'>
-                            Market Cap
-                        </div>
-                        <div className="card">
-                        </div>
-
-                    </div>
-                    <div>
-                        <div className='rounded-lg shadow-xl  text-white bg-secondary flex justify-center items-center min-h-[100px] text-xl'>
-                            Total Rewarded
-                        </div>
-                        <div className="card">
-                        </div>
-
-                    </div>
-                    <div>
-                        <div className='rounded-lg shadow-xl  text-white bg-secondary flex justify-center items-center min-h-[100px] text-xl'>
-                            Sent to Vault
-                        </div>
-                        <div className="card">
-                        </div>
-
-                    </div>
+                    <SmallCard title='Current Price' price='235,000' />
+                    <SmallCard title='Total Supply' price='3,000,000' />
+                    <SmallCard title='Burned Supply' price='1,000,000' />
+                    <SmallCard title='Market Cap' price='3,000,000' />
+                    <SmallCard title='Total Rewarded' price='123,000,000' />
+                    <SmallCard title='Sent to Vault' price='123,000,000' />
                 </div>
             </div>
             <div className="lg:py-40 py-20 homecard">

@@ -25,8 +25,8 @@ const Stake = () => {
                 <div className="grid grid-cols-2 gap-7">
                     <div className="col-span-2">
                         <div className=" bg-secondary text-white rounded-md p-5 text-2xl text-center space-y-3 w-[100%]">
-                            <div className='text-primary font-bold text-2xl'>
-                                TVL
+                            <div className='text-primary font-bold text-2xl flex gap-4 justify-center'>
+                                TVL :  <div className='text-white'>rewards xxxx</div>
                             </div>
                             <div className='text-white font-bold text-4xl'>
                                 $235,000
